@@ -4,6 +4,10 @@ $(call inherit-product, vendor/turbo/config/common_full_phone.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/turbo/config/nfc_enhanced.mk)
 
+# ViPER4Android
+PRODUCT_PACKAGES += \
+    ViPER4Android
+
 $(call inherit-product, device/sony/sirius/full_sirius.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D6503
